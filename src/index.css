@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --box-color: #02243f;
+  --padding-first: 10px;
+  --bor-radius: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: var(--padding-first);
+  display: flex;
+  column-gap: 10px;
+}
+
+header #add-item, header #filter-item {
+  width: 50%;
+  max-width: 400px;
+  border: 1px solid var(--box-color);
+  padding: var(--padding-first);
+  border-radius: var(--bor-radius);
+}
+
+header #add-item form,  header #filter-item form {
+  padding: 5px;
+}
+
+form input {
+  width: 70%;
+  padding: 8px 0;
+  padding-left: 5px;
+}
+
+form button {
+  width: 25%;
+  padding: 8px 0;
+  border: none;
+  background-color: var(--box-color);
+  color: #fff;
+  border-radius: var(--bor-radius);
+  cursor: pointer;
+}
+
+#box-list {
+  width: 100%;
+  padding: var(--padding-first);
+}
+
+
+#box-list #list-items {
+  width: 65%;
+  max-width: 500px;
+  list-style: none;
+  border: 1px solid var(--box-color);
+  padding: var(--padding-first);
+  border-radius: var(--bor-radius);
+}
+
+#list-items #item {
+  padding: var(--padding-first);
+  border-radius: var(--bor-radius);
+  background-color: var(--box-color);
+  color: #fff;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#item span {
+  cursor: pointer;
+}
+
+#item span:hover {
+  color: #aaa;
+}
+
+@media screen and (max-width: 576px) {
+  #box-list #list-items {
+    width: 80%;
+  }
+}

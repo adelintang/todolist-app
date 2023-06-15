@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/index.css">
+  <title>todo app</title>
+</head>
+<body>
+  <header>
+    <div id="add-item">
+      <h2>Add Item</h2>
+      <form action="" id="form-add">
+        <input id="form-input" type="text" placeholder="input todo">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="filter-item">
+      <h2>Filter Item</h2>
+      <form action="" id="form-search">
+        <input type="text" placeholder="search todo">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <section id="box-list">
+    <ul id="list-items">
+      <li id="item"><p>Bangun Pagi</p><span id="delete">X</span></li>
+      <li id="item"><p>Sarapan</p><span id="delete">X</span></li>
+      <li id="item"><p>Go Study</p><span id="delete">X</span></li>
+      <li id="item"><p>Makan Siang</p><span id="delete">X</span></li>
+    </ul>
+  </section>
+
+<script type="module" src="./src/index.js"></script>
+</body>
+</html>
